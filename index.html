@@ -1,0 +1,27 @@
+
+
+
+<script>
+    async function geto() {
+        try{
+        let id = parseFloat(prompt('Enter ID Number :'));
+
+      let a = await  fetch(`http://localhost:3000/user/${id}`)
+            if(a.status == false){
+                throw new Error(`This id is not found in server......`);
+                
+            }else{
+                let b = await a.json()
+
+                console.log(b);
+                
+            }
+
+    }catch(error){
+        console.log(error)
+    }
+    }
+    geto()
+
+    
+</script>

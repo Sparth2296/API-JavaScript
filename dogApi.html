@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            background-color: wheat;
+        }
+        img{
+            width: 600px;
+            height: 600px;
+            border: 10px double brown;
+        }
+        button{
+            width: 200px;
+            height: 50px;
+            background-color: brown;
+            color: white;
+            font-size: 2rem;
+            outline: none;
+            box-shadow: 6px 6px 5px 0px gray;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRragwA1k7blEjULmZbZ3cyKDzlsrNA-pvdbA&s" alt="">
+    <button onclick="necxt()"> Next</button>
+
+    <script>
+        
+        let necxt =  async ()=>{
+            let img = document.querySelector('img');
+            try{
+                let res = await fetch('https://dog.ceo/api/breeds/image/random')
+
+                let reslut = await res.json()
+
+               console.log( reslut.message);
+               
+
+                img.src = reslut.message
+
+            }catch(e){
+                console.log(e);
+                
+            }
+        }
+    </script>
+</body>
+</html>

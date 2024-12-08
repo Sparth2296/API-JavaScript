@@ -1,0 +1,68 @@
+{
+  "movie": [
+    {
+      "id": "1",
+      "title": "Pushpa: The Rule - Part 2",
+      "poster": "./image/pushpa2.jpg",
+      "poster02": "./image/pushapa 02.png",
+      "StoryLine": "The clash is on as Pushpa and Bhanwar Singh continue their rivalry in this epic conclusion to the two-parted action drama."
+    },
+    {
+      "id": "2",
+      "title": "No Time to Die",
+      "poster": "./image/no time to die 01.jpg",
+      "poster02": "./image/no time tto die 02.webp",
+      "StoryLine": "The clash is on as Pushpa and Bhanwar Singh continue their rivalry in this epic conclusion to the two-parted action drama."
+    },
+    {
+      "id": "3",
+      "title": "Ghosted",
+      "poster": "./image/ghosterd 01.jpeg",
+      "poster02": "./image/ghosted 02.jpg",
+      "StoryLine": "Cole falls head over heels for enigmatic Sadie, but then makes the shocking discovery that she's a secret agent. Before they can decide on a second date, Cole and Sadie are swept away on an international adventure to save the world."
+    },
+    {
+      "id": "4",
+      "title": "American Psycho",
+      "poster": "./image/american 01.jpg",
+      "poster02": "./image/american 02.jpg",
+      "StoryLine": "The clash is on as Pushpa and Bhanwar Singh continue their rivalry in this epic conclusion to the two-parted action drama."
+    },
+    {
+      "id": "5",
+      "title": "La La Land",
+      "poster": "./image/lala land.jpg",
+      "poster02": "./image/lala land 02.jpg",
+      "StoryLine": "Sebastian (Ryan Gosling) and Mia (Emma Stone) are drawn together by their common desire to do what they love. But as success mounts they are faced with decisions that begin to fray the fragile fabric of their love affair, and the dreams they worked so hard to maintain in each other threaten to rip them apart."
+    },
+    {
+      "id": "6",
+      "title": "Interstellar",
+      "poster": "./image/Interstellar.jpg",
+      "poster02": "./image/interstellar 02.webp",
+      "StoryLine": "In Earth's future, a global crop blight and second Dust Bowl are slowly rendering the planet uninhabitable. Professor Brand (Michael Caine), a brilliant NASA physicist, is working on plans to save mankind by transporting Earth's population to a new home via a wormhole."
+    },
+    {
+      "id": "7",
+      "title": "The Gray Man",
+      "poster": "./image/thtGrayMAn.jpeg",
+      "poster02": "./image/gray man 02.jpg",
+      "StoryLine": "When the CIA's top asset -- his identity known to no one -- uncovers agency secrets, he triggers a global hunt by assassins set loose by his ex-colleague."
+    },
+    {
+      "id": "8",
+      "title": "Jay Hanuman",
+      "poster": "./image/jay hanuman 02.jpg",
+      "poster02": "./image/jay hanuman 01.jpg",
+      "StoryLine": "The movie Jai Hanuman is set in Kaliyug and follows Hanuman as he lives in exile in Agnyathavas, bound by a promise to Rama. The movie is a tribute to the strength of a vow and unbreakable devotion. It is part of the Prasanth Varma Cinematic Universe (PCVU)."
+    },
+    {
+      "id": "9",
+      "title": "Oppenheimer",
+      "poster": "./image/oppenheimer 01.jpg",
+      "poster02": "./image/oppenheimer 02.jpg",
+      "StoryLine": "During World War II, Lt. Gen. Leslie Groves Jr. appoints physicist J. Robert Oppenheimer to work on the top-secret Manhattan Project. Oppenheimer and a team of scientists spend years developing and designing the atomic bomb. Their work comes to fruition on July 16, 1945."
+    }
+      
+  ]
+}

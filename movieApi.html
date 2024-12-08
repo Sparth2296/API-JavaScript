@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieWord</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/style-Movie.css">
+</head>
+
+<body>
+    <nav>
+        <img src="./image/cinema.gif" alt="" class="gif">
+        <strong>MOVIEWORD</strong>
+        <ul>
+            <li>All Movies</li>
+            <li>BollyWood</li>
+            <li>HollyWood</li>
+            <li>Dhollywood</li>
+            <li>TollyWood</li>
+        </ul>
+    </nav>
+    <div class="main-container">
+        <!-- <div class="card">
+            <img src="./image/ghosterd 01.jpeg" alt="ghosterd1" class="default">
+            <img src="./image/ghosted 02.jpg" alt="ghosted2" class="hover">
+
+            <h1>Ghosterd</h1>
+            <p>Cole falls head over heels for enigmatic Sadie, but then makes the shocking discovery that she's a secret
+                agent. Before they can decide on a second date, Cole and Sadie are swept away on an international
+                adventure to save the world.</p>
+        </div> -->
+    </div>
+</body>
+</html>
+
+<script>
+    
+    async function movie() {
+    try {
+        let res = await fetch('http://localhost:3000/movies');
+        
+        if (!res.ok) {
+            throw new Error(`HTTP error! Status: ${res.status}`);
+        }
+
+        let movies = await res.json();
+        let container = document.querySelector(".main-container"); 
+        container.innerHTML = '';
+
+        movies.forEach((val, i) => {
+            let card = document.createElement('div');
+            card.className = 'card';
+
+            card.innerHTML = `
+                <img src="${val.poster}" alt="poster1" class="default">
+                <img src="${val.poster02}" alt="poster2" class="hover">
+                <h1>${val.title}</h1>
+                <p>${val.StoryLine}</p>
+            `;
+            container.appendChild(card);
+        });
+
+    } catch (e) {
+        console.error('Error fetching or displaying movies:', e);
+    }
+}
+
+movie();
+
+</script>
